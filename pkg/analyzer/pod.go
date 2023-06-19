@@ -63,7 +63,10 @@ func (PodAnalyzer) Analyze(a common.Analyzer) ([]common.Result, error) {
 				if containerStatus.State.Waiting.Reason == "CrashLoopBackOff" || containerStatus.State.Waiting.Reason == "ImagePullBackOff" {
 					if containerStatus.State.Waiting.Message != "" {
 						failures = append(failures, common.Failure{
-							Text:      containerStatus.State.Waiting.Message,
+							Text: fmt.Sprintf("message: %v, reason: %v",
+								containerStatus.State.Waiting.Message,
+								containerStatus.LastTerminationState.Terminated.Reason,
+							),
 							Sensitive: []common.Sensitive{},
 						})
 					}
