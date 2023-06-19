@@ -15,6 +15,7 @@ package common
 
 import (
 	"context"
+	"encoding/json"
 
 	trivy "github.com/aquasecurity/trivy-operator/pkg/apis/aquasecurity/v1alpha1"
 	openapi_v2 "github.com/google/gnostic/openapiv2"
@@ -66,9 +67,14 @@ type Result struct {
 	ParentObject string    `json:"parentObject"`
 }
 
+func (r Result) JsonStr() (string, error) {
+	bytes, err := json.Marshal(r)
+	return string(bytes), err
+}
+
 type Failure struct {
-	Text          string
-	KubernetesDoc string
+	Text          string `json:"text"`
+	KubernetesDoc string `json:"kubernetesDoc"`
 	Sensitive     []Sensitive
 }
 
