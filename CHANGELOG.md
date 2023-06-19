@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.9](https://github.com/k8sgpt-ai/k8sgpt/compare/v0.3.8...v0.3.9) (2023-06-19)
+
+
+### Bug Fixes
+
+* 'intergration' typos ([#508](https://github.com/k8sgpt-ai/k8sgpt/issues/508)) ([64b93c9](https://github.com/k8sgpt-ai/k8sgpt/commit/64b93c9116b6a7f82419f1c4fff98fa68b8c0aca))
+* **deps:** update module github.com/aws/aws-sdk-go to v1.44.284 ([#501](https://github.com/k8sgpt-ai/k8sgpt/issues/501)) ([d87127a](https://github.com/k8sgpt-ai/k8sgpt/commit/d87127a309734847a56bf95c2e947e2270f94a88))
+* **deps:** update module github.com/prometheus/client_golang to v1.16.0 ([#507](https://github.com/k8sgpt-ai/k8sgpt/issues/507)) ([14e5691](https://github.com/k8sgpt-ai/k8sgpt/commit/14e5691190bf772c05477cbcb811ed71bec450a3))
+* **deps:** update module google.golang.org/grpc to v1.56.0 ([#510](https://github.com/k8sgpt-ai/k8sgpt/issues/510)) ([f3e0b9b](https://github.com/k8sgpt-ai/k8sgpt/commit/f3e0b9b56d13397c79f57e76bdd6b741bb565fb4))
+* **deps:** update module helm.sh/helm/v3 to v3.12.1 ([#503](https://github.com/k8sgpt-ai/k8sgpt/issues/503)) ([0f03ddc](https://github.com/k8sgpt-ai/k8sgpt/commit/0f03ddcf0f5ec79bc6dbb74c654e0d8fac634a0a))
+
+
+### Other
+
+* **deps:** update docker/build-push-action digest to 2eb1c19 ([#499](https://github.com/k8sgpt-ai/k8sgpt/issues/499)) ([9df75cc](https://github.com/k8sgpt-ai/k8sgpt/commit/9df75cc959f7ed23cae8e3761498ea6c56885788))
+
 ## [0.3.8](https://github.com/k8sgpt-ai/k8sgpt/compare/v0.3.7...v0.3.8) (2023-06-15)
 
 
